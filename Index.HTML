@@ -1,0 +1,170 @@
+<html>
+	<head>
+	<style>
+	#bgp{
+	margin: 0 auto;
+	background-image:url("back1.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	height:100%;
+	width:100%;
+	justify-content:center;
+	display:flex;
+	align-items:center;}
+	
+	#fgp{
+	margin: 0 auto;
+	background-image:url("front1.jpeg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	height:50%;
+	width:50%;
+	border-radius:10px 10px 10px 10px;
+	}
+	
+	input{border:none;
+	border-color:none;
+	width:50px;
+	margin-right:0px;
+	padding:15px 15px;
+	text-align:center;
+	display:inline-block;
+	}
+	</style>
+	<script>
+		function txtcol(arg){
+			if(arg==0){
+				document.getElementById("text").style.color="black";
+				}
+			if(arg==1){
+				document.getElementById("text").style.color="red";
+				}
+			if(arg==2){
+				document.getElementById("text").style.color="green";
+				}
+			if(arg==3){
+				document.getElementById("text").style.color="yellow";
+				}
+			if(arg==4){
+				document.getElementById("text").style.color="blue";
+				}
+				}
+		function bckcol(arg){
+			if(arg==0){
+				document.getElementById("text").style.backgroundColor="white";
+				}
+			if(arg==1){
+				document.getElementById("text").style.backgroundColor="orange";
+				}
+			if(arg==2){
+				document.getElementById("text").style.backgroundColor="grey";
+				}
+			if(arg==3){
+				document.getElementById("text").style.backgroundColor="pink";
+				}
+			if(arg==4){
+				document.getElementById("text").style.backgroundColor="black";
+				}
+				}
+		function back(arg){
+			if(arg==0){
+				document.getElementById('bgp').style.backgroundImage="url('back1.jpg')";
+				}
+			if(arg==1){
+				document.getElementById('bgp').style.backgroundImage="url('back2.jpg')";
+				}
+			if(arg==2){
+				document.getElementById('bgp').style.backgroundImage="url('back3.jpg')";
+				}
+			if(arg==3){
+				document.getElementById('bgp').style.backgroundImage="url('back4.jpg')";
+				}
+			if(arg==4){
+				document.getElementById('bgp').style.backgroundImage="url('back5.jpg')";
+				}
+				}
+		function front(arg){
+			if(arg==0){
+				document.getElementById('fgp').style.backgroundImage="url('front1.jpeg')";
+				}
+			if(arg==1){
+				document.getElementById('fgp').style.backgroundImage="url('front2.jpeg')";
+				}
+			if(arg==2){
+				document.getElementById('fgp').style.backgroundImage="url('front3.jpg')";
+				}
+			if(arg==3){
+				document.getElementById('fgp').style.backgroundImage="url('front4.jpg')";
+				}
+			if(arg==4){
+				document.getElementById('fgp').style.backgroundImage="url('front5.jpg')";
+				}
+				}
+
+		</script>
+
+		
+	</head>
+	<body>
+		<div id="main" style="width:100%; height:100%; background-color:grey;">
+			<div id="textcol" style="width:25%; height:25%; background-color:lightcyan; float:left;text-align: center;font-family:berlin sans fb;">
+				<h1>Text Color</h1>
+				<input id="black1" type="button" onclick="txtcol(0);"/>
+				<input id="red" type="button" onclick="txtcol(1);";/>
+				<input id="green" type="button" onclick="txtcol(2);"/>
+				<input id="yellow" type="button" onclick="txtcol(3);"/>
+				<input id="blue" type="button" onclick="txtcol(4);"/>
+				<script>
+				document.getElementById("black1").style.backgroundColor="black";
+				document.getElementById("red").style.backgroundColor="red";
+				document.getElementById("green").style.backgroundColor="green";
+				document.getElementById("yellow").style.backgroundColor="yellow";
+				document.getElementById("blue").style.backgroundColor="blue";
+				</script>
+				
+			</div>
+			<div id="text" style="width:75%; height:50%; background-color:white; font-size:70px; float:right; text-align: center; font-family:berlin sans fb;">
+				<h1>Hello</h1>
+			</div>
+			<div id="backcol" style="width:25%; height:25%; background-color:paleturquoise; float:left;text-align: center;font-family:berlin sans fb;">
+				<h1>Background Color</h1>
+				<input id="white" type="button" onclick="bckcol(0);" />
+				<input id="orange" type="button" onclick="bckcol(1);"/>
+				<input id="grey" type="button" onclick="bckcol(2);"/>
+				<input id="pink" type="button" onclick="bckcol(3);""/>
+				<input id="black2" type="button" onclick="bckcol(4);""/>
+				<script>
+				document.getElementById("white").style.backgroundColor="white";
+				document.getElementById("orange").style.backgroundColor="orange";
+				document.getElementById("grey").style.backgroundColor="grey";
+				document.getElementById("pink").style.backgroundColor="pink";
+				document.getElementById("black2").style.backgroundColor="black";
+				</script>
+			</div>
+			<div id="frontpic" style="width:25%; height:25%; background-color:aquamarine; float:left;text-align: center;font-family:berlin sans fb;">
+				<h1>Front Picture</h1>
+				<input id="fp1" type="image" src="front1.jpeg" style="height:40px;width:40px;" onclick="front(0);"/>
+				<input id="fp2" type="image" src="front2.jpeg" style="height:40px;width:40px;" onclick="front(1);"/>
+				<input id="fp3" type="image" src="front3.jpg" style="height:40px;width:40px;" onclick="front(2);"/>
+				<input id="fp4" type="image" src="front4.jpg" style="height:40px;width:40px;" onclick="front(3);"/>
+				<input id="fp5" type="image" src="front5.jpg" style="height:40px;width:40px;" onclick="front(4);"/>
+			</div>
+			<div style="width:75%; height:50%;float:right;">
+				<div id="bgp" style="width:100%; height:100%;">
+					<div id="fgp">
+					</div>
+				</div>
+
+			</div>
+			<div id="backpic" style="width:25%; height:25%; background-color:turquoise; float:left;text-align: center;font-family:berlin sans fb;">
+				<h1>Background Picture</h1>
+				<input id="bk1" type="image" src="back1.jpg" style="height:40px;width:40px;" onclick="back(0);"/>
+				<input id="bk2" type="image" src="back2.jpg" style="height:40px;width:40px;" onclick="back(1);"/>
+				<input id="bk3" type="image" src="back3.jpg" style="height:40px;width:40px;" onclick="back(2);"/>
+				<input id="bk4" type="image" src="back4.jpg" style="height:40px;width:40px;" onclick="back(3);"/>
+				<input id="bk5" type="image" src="back5.jpg" style="height:40px;width:40px;" onclick="back(4);"/>
+			</div>
+			
+		</div>
+	</body>
+</html>
